@@ -1,0 +1,20 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(100vh - 70px);
+
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+}
+
+.hero p {
+  font-size: 24px;
+  color: #2d2d2d;
+}
