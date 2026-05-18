@@ -1,0 +1,36 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Sweet Crumbs",
+      "description": "Fresh pastries baked daily",
+      "phone_number": "555-9876"
+    }
+  ],
+
+  "pastries": [
+    {
+      "id": 1,
+      "name": "Chocolate Croissant",
+      "description": "Flaky pastry with rich chocolate filling",
+      "origin": "France",
+      "price": 6
+    },
+
+    {
+      "id": 2,
+      "name": "Strawberry Donut",
+      "description": "Soft donut topped with strawberry glaze",
+      "origin": "USA",
+      "price": 4
+    },
+
+    {
+      "id": 3,
+      "name": "Blueberry Muffin",
+      "description": "Moist muffin packed with blueberries",
+      "origin": "Canada",
+      "price": 5
+    }
+  ]
+}
