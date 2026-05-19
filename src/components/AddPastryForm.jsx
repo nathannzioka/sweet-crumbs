@@ -4,7 +4,7 @@ import useProducts from "../hooks/useProducts";
 function AddPastryForm() {
   const { addProduct } = useProducts();
 
-  // controlled form state
+
   const [formData, setFormData] = useState({
     name: "",
     description: "",
@@ -14,11 +14,11 @@ function AddPastryForm() {
 
   const [error, setError] = useState("");
 
-  // required hooks
+  
   const nameRef = useRef(null);
   const formId = useId();
 
-  // handle input change
+  
   function handleChange(e) {
     setFormData({
       ...formData,
@@ -26,11 +26,10 @@ function AddPastryForm() {
     });
   }
 
-  // submit form
   async function handleSubmit(e) {
     e.preventDefault();
 
-    // validation
+    
     if (
       !formData.name ||
       !formData.description ||
@@ -42,13 +41,13 @@ function AddPastryForm() {
       return;
     }
 
-    // POST request via custom hook
+    
     await addProduct({
       ...formData,
       price: Number(formData.price)
     });
 
-    // reset form
+  
     setFormData({
       name: "",
       description: "",
