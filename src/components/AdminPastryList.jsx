@@ -17,7 +17,7 @@ function AdminPastryList() {
 
           <strong>Ksh{pastry.price}</strong>
 
-          {/* UPDATE */}
+      
           <div>
             <input
               type="number"
@@ -35,7 +35,7 @@ function AdminPastryList() {
             </button>
           </div>
 
-          {/* DELETE */}
+      
           <button
             onClick={() => deleteProduct(pastry.id)}
           >
