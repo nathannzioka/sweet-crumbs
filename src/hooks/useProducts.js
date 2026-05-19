@@ -5,14 +5,14 @@ const API = "http://localhost:3001/pastries";
 function useProducts() {
   const [products, setProducts] = useState([]);
 
-  // GET pastries
+
   useEffect(() => {
     fetch(API)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 
-  // ADD pastry
+  
   const addProduct = async (newPastry) => {
     const res = await fetch(API, {
       method: "POST",
@@ -24,7 +24,7 @@ function useProducts() {
     setProducts((prev) => [...prev, data]);
   };
 
-  // DELETE pastry
+
   const deleteProduct = async (id) => {
     await fetch(`${API}/${id}`, {
       method: "DELETE",
@@ -33,7 +33,7 @@ function useProducts() {
     setProducts((prev) => prev.filter((p) => p.id !== id));
   };
 
-  // UPDATE pastry price
+  
   const updatePrice = async (id, price) => {
     const res = await fetch(`${API}/${id}`, {
       method: "PATCH",
