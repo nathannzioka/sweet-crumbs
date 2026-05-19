@@ -1,16 +1,33 @@
-# React + Vite
+ Sweet Crumbs Admin Portal 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is a React Single Page Application done in a summative lab.
+This app imitates an admin panel for adding new products on an online bakery shop
 
-Currently, two official plugins are available:
+Feature
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- A landing page about the shop
+- Shop page showing the pastries
+- An admin page where the admin can add new pastries
+- Searching through pastries
+- Edit/Delete products
+- Client-side routing using React Router
+- Mobile responsive design with bright yellow theme
+- Prices in Kenyan Shilling (Ksh)
 
-## React Compiler
+Tools used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- React Router
+- Hooks (useState, useEffect, useRef, useId, Custom Hook)
+- JSON Server (mock backend)
+- Vitest & React Testing Library
+- CSS
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+How to Install
+
+1. Clone the repo
+2. type in code .
+
+git clone <your-repo-link>`
